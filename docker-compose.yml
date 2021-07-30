@@ -1,0 +1,9 @@
+version: '3'
+services:
+  classifier:
+    build: .
+    ports:
+          - "8888:8888"
+    volumes:
+      - ./app:/home/jovyan/work
+      - ./data:/home/jovyan/scikit_learn_data
